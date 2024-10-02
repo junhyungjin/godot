@@ -2,5 +2,10 @@
 
 [ext_resource type="Texture2D" uid="uid://ln6764m3588x" path="res://playerShip1_orange.png" id="1_aggkf"]
 
-[node name="Player" type="Sprite2D"]
+[node name="Player" type="Area2D"]
+position = Vector2(31, 107)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_aggkf")
